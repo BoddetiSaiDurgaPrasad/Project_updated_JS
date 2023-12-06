@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Twitter Sentiment Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="..\static\test1.css">
+    <!-- <link rel="stylesheet" type="text/css" href="test1.css"> -->
+    <script src="..\static\app.js"></script>
+</head>
+<body>
+    <h1 class="heading">Sentiment Analyzer</h1>
+    <div id="input_box">
+            <h1 style="text-align: center; color: #f0758a;">Upload File here</h1>
+            <div class="minibox">
+                <input type="file" name="attachment" id='attachment' required accept=".xlsx, .xls, .csv">
+            </div>
+            <br><br>
+            <!-- onclick="sendData()"  -->
+            <button onclick="prin()" id="submit_button">Submit</button>
+    </div>
+    <div id="Output" >
+        <div class="box" id="color1"> 
+            <h1 class="cen">Positive</h1> 
+            <h1 class="cen"><span id="x"></span></h1>
+            <p><b>This Percentage shows us the Positive Percentage of Comments in the data</b></p>
+        </div>
+        <div class="box" id="color2"> 
+            <h1 class="cen">Neutral</h1>
+            <h1 class="cen"><span id="y"></span></h1>
+            <p><b>This Percentage shows us the Neutral Percentage of Comments in the data</b></p>
+        </div>
+        <div class="box" id="color3"> 
+            <h1 class="cen">Negative</h1>
+            <h1 class="cen"><span id="z"></span></h1>
+            <p><b>This Percentage shows us the Negative Percentage of Comments in the data</b></p>
+        </div>
+        <div class="button">
+            <a href="{{url_for('download')}}">Download</a>
+            <!-- <button>Download</button> -->
+        </div>
+    </div>
+    <div id="error">
+        <h1>
+            <b>Please Give the File Input Properly</b>
+        </h1>
+    </div>
+</body>
+</html>

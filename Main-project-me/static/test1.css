@@ -1,0 +1,116 @@
+body
+{
+   background-color: black;
+    /* background-attachment: fixed; */
+}
+.box
+{
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    float: left;
+    margin-top: 70px;
+    margin-left:70px;
+    margin-bottom: 70px;
+    border-radius: 5%;
+}
+#color1:hover{
+    box-shadow:2px 2px 18px #48e8a3;
+}
+#color2:hover{
+    box-shadow:2px 2px 18px #66abfa;
+}
+#color3:hover{
+    box-shadow:2px 2px 18px #f0758a;
+}
+#color3
+{
+
+    background: linear-gradient(210deg,#f0758a,white 60%);
+}
+#color2
+{
+    background: linear-gradient(210deg,#66abfa,white 60%);
+    
+}
+#color1
+{
+    background: linear-gradient(210deg,#48e8a3,white 60%);
+}
+.heading
+{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    margin-bottom: 5%;
+}
+.cen
+{
+    text-align: center;
+    padding-bottom: 10%;
+}
+#input_box{
+
+    height:200px;
+    width:600px;
+    background-color: white;
+    margin-left: 25%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #48e8a3; 
+    align-items: center;
+}
+#input_box:hover
+{
+    box-shadow:2px 2px 14px #48e8a3;
+}
+input
+{
+    
+    margin-left: 180px; 
+}
+.minibox
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    margin-left: 8%;
+    height:20px;
+    width: 500px;
+    border-style: solid;
+    border-radius: 15px; 
+    border-color: #48e8a3;
+}
+.submi
+{
+    margin-left: 100px;
+}
+.but
+{
+    border-color: white;
+    height: 30px;
+    width: 60px;
+    font: bold;
+}
+#output
+{
+    text-decoration: none;
+}
+#error
+{
+    color: #f0758a;
+    /* display: none; */
+    margin-top: 15px;
+    margin-left: 30%;
+}
+#submit_button
+{
+    margin-left: 45%;
+    height: 14%;
+    width:16%;
+    color: white;
+    border-radius: 15px;
+    border-color: transparent;
+    background-color: #7545dd;
+}
